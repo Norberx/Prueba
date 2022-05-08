@@ -113,3 +113,6 @@ Tratamos de usar Unittest para orden del codigo, el cual seria como la mejor man
 4. Además me viera gusta hacer alguna pruebas mas detalladas con el login de google,salm y OpenID
 5. En general talvez hay mejores prácticas de automatizar que viera podido introducir con más tiempo
 
+## Autor ✒️
+Norberto Araya Mena
+
