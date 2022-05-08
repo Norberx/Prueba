@@ -33,12 +33,21 @@ Tratamos de usar Unittest para orden del codigo, el cual seria como la mejor man
    
     > def test_login1(self):
     >    driver = self.driver
+    >    
     >    driver.get('https://app.sysdigcloud.com/#/login')
+    >    
     >    email = driver.find_element(By.ID, 'ember1642')
+    >    
     >    email.send_keys("norberto.araya@gmail.com")
+    >    
     >    clave = driver.find_element(By.ID, 'ember1643')
+    >    
     >    clave.send_keys("Clave1234")
+    >    
     >    bto = driver.find_element(By.ID, 'ember1652')
+    >    
     >    bto.click()
+    >    
     >    print("error crendenciales incorrectas")
+    >    
     >    time.sleep(3)
