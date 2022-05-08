@@ -12,8 +12,12 @@ Fué necesario primero instalar los siguientes componetentes para dar inicio a l
 ## Paso a apaso
 1. Creamos el file Tester.py, importamos la librería de webdriver desde selenium y Keys para poder trabajar con el file
 > import time
+
 > import unittest
+
 > from selenium import webdriver
+
 > from selenium.webdriver.common.keys import Keys
+>
 > from selenium.webdriver.common.by import By
 
