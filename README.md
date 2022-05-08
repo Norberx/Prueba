@@ -10,7 +10,7 @@ Fué necesario primero instalar los siguientes componetentes para dar inicio a l
 3. Configuración y descarga de los Webdrivers tanto para Chrome y el de Firefox, en el ejercicio se usa unicamente el de Chrome.
 
 ## Paso a apaso
-1. Creamos el file Tester.py, importamos la librería de webdriver desde selenium y Keys para poder trabajar con el file
+1. Creamos el file Tester.py, importamos las siguientes librerias, en el caso de *inittest se incorpora sola
 > import time
 
 > import unittest
