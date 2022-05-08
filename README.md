@@ -3,14 +3,15 @@
 ## Introducción
 Se hacesn varias puruebas de UnitTest muy básicas a la pag web solicitada de: app.sysdigcloud.com
 
-## Requerimintos necesarios para la prueba
+## Requerimintos necesarios para la prueba 🔧
 Fué necesario primero instalar los siguientes componetentes para dar inicio a la prueba:
 1. Instalación de Python 3.9.6v / https://www.python.org/
 2. Instalación del IDE de Pycharm / https://www.jetbrains.com/es-es/pycharm/ para poder programar sensillo con python, importante destacar que se incorpora el interprete de python y la paquetería de selenium según el requerimiento.
 3. Configuración y descarga de los Webdrivers tanto para Chrome y el de Firefox, en el ejercicio se usa unicamente el de Chrome.
 
-## Paso a apaso
-1. Creamos el file Tester.py, importamos las siguientes librerias, en el caso de **inittest se incorpora sola**
+## Paso a apaso 🚀
+1. Creamos el proyecto **Norberto** con el file **Tester.py**, importamos las siguientes librerias necesarias para la prueba, en el caso de **inittest se incorpora sola**
+
 > import time
 >
 > import unittest
@@ -21,14 +22,15 @@ Fué necesario primero instalar los siguientes componetentes para dar inicio a l
 >
 > from selenium.webdriver.common.by import By
 
-2. Creamos una case llamada **prueba** la cual nos importa la libreria de unittest automatico, creamos la función que debe llamarce **def** con el alrgumento **self** y para usarlo podemos poner uan variable en este caso drive para llamar la ruta de Chrome con .get.
+2. Creamos una case llamada **prueba** la cual nos importa la libreria de unittest automatico, creamos la función que debe llamarce **def** con el alrgumento **self** y para usarlo podemos poner una variable en este caso se llama drive para llamar la ruta de Chrome con .get.
+
 Tratamos de usar Unittest para orden del codigo, el cual seria como la mejor manera de crear una plantilla para futuros test
 
 >class prueba(unittest.TestCase):
 >   def setUp(self):
 >       self.driver = webdriver.Chrome('chromedriver.exe')
 
-3. Creamos el primer **Test_login1**
+3. Creamos el primer **Test_login1** ⚙️
    La idea de este test es abrir la pagina web en Chrome y utilizando el Selector id de email addrees (ember1642) enviamos con Keys el dato de un correo electronico de    ejemplo, luego utilizando el Selector id de password (ember1643) enviamos con Keys el dato de una clave cualquiera, posterior utilizando el Selector id de Log-in      (ember1652) e invocamos un click para que oprima en la casilla e imprimimos un mensaje de error de credenciales, incluyo un timer de 3 segundo solo para poder          visualizar los detalles:
    
 > def test_login1(self):
@@ -52,7 +54,7 @@ Tratamos de usar Unittest para orden del codigo, el cual seria como la mejor man
 >    
 >    time.sleep(3)
 
-4. Creamos el segundo **Test_login2**
+4. Creamos el segundo **Test_login2** ⚙️
    La idea de este test es abrir la pagina web en Chrome y utilizando el Selector id de email addrees (ember1642) enviamos con Keys el dato de un correo electronico      vacio, luego utilizando el Selector id de password (ember1643) enviamos con Keys el dato de una clave vacia, posterior utilizando el Selector id de Log-in              (ember1652) e invocamos un click para que oprima en la casilla e imprimimos un mensaje de error por fata de datos, incluyo un timer de 3 segundo solo para poder        visualizar los detalles:
    
 > def test_login2(self):
@@ -76,7 +78,7 @@ Tratamos de usar Unittest para orden del codigo, el cual seria como la mejor man
 >    
 >    time.sleep(3)
 
-5. Creamos el tercer **Test_login3**
+5. Creamos el tercer **Test_login3** ⚙️
    En este test se trata de abrir la pagina web en Chrome y utilizando el Selector id de Log in with Google (identifierId) enviamos con Keys el dato de un correo          electronico de ejemplo, luego utilizando el Selector id de password (V67aGc) enviamos con Keys el dato de una clave vacia, posterior utilizando el Selector id de      jsname="V67aGc"e invocamos un click para que oprima en la casilla e imprimimos un mensaje de credencial incorrecto, incluyo un timer de 3 segundo solo para poder      visualizar los detalle:
    
 > def test_login3(self)
@@ -99,8 +101,14 @@ Tratamos de usar Unittest para orden del codigo, el cual seria como la mejor man
 
 > **NOTA: En este caso no logre aclara bien el tema de Selector correcto para llamar la tecla siguiente = jsname="V67aGc"**
 
-6. Creamos la funcion final para el cierre de la prueba de **Tester1**, debe llamarce **tearDown** y se agraga un if name == mail que unittest en su paltilla oficial      pide como base para cerrar la clase principal:
+6. Creamos la funcion final para el cierre de la prueba de **Tester1**, debe llamarce **tearDown** y se agraga un if name == mail que unittest en su paltilla oficial      pide como requisito base para cerrar la clase principal:
 
 >if __name__ == '__main__':
 >
 >   unittest.main()
+
+## Posibles mejoras si hubiera más tiempo 🔩
+1.La mejora que viera incorporado es la revición de la función KEYS por alguna raón al correr el código aveces sirve y aveces no lo cual no me deja satifescho
+2.Me viera gusta incorporar el selector correcto para llamar la casilla sigueinte el la prueba de login con Google, se que use uno icorrecto no devio ser de ID para jsname="V67aGc.
+3
+
