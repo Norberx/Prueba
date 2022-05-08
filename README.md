@@ -21,3 +21,24 @@ Fué necesario primero instalar los siguientes componetentes para dar inicio a l
 >
 > from selenium.webdriver.common.by import By
 
+2. Creamos una case llamada **prueba** la cual nos importa la libreria de unittest automatico, creamos la función que debe llamarce **def** con el alrgumento **self** y para usarlo podemos poner uan variable en este caso drive para llamar la ruta de Chrome con .get.
+Tratamos de usar Unittest para orden del codigo, el cual seria como la mejor manera de crear una plantilla para futuros test
+
+>class prueba(unittest.TestCase):
+>   def setUp(self):
+>       self.driver = webdriver.Chrome('chromedriver.exe')
+
+3. Creamos el primer **Test_login1**
+   La idea de este test es abrir la pagina web en Chrome y utilizando el Selector id de email addrees (ember1642) enviamos con Keys el dato de un correo electronico de    ejemplo, luego utilizando el Selector id de password (ember1643) enviamos con Keys el dato de una clave cualquiera, posterior utilizando el Selector id de Log-in      (ember1652) e invocamos un click para que oprima en la casilla e imprimimos un mensaje de error de credenciales, incluyo un timer de 3 segundo solo para poder          visualizar los detalles:
+   
+    > def test_login1(self):
+    >    driver = self.driver
+    >    driver.get('https://app.sysdigcloud.com/#/login')
+    >    email = driver.find_element(By.ID, 'ember1642')
+    >    email.send_keys("norberto.araya@gmail.com")
+    >    clave = driver.find_element(By.ID, 'ember1643')
+    >    clave.send_keys("Clave1234")
+    >    bto = driver.find_element(By.ID, 'ember1652')
+    >    bto.click()
+    >    print("error crendenciales incorrectas")
+    >    time.sleep(3)
