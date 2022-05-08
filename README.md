@@ -108,7 +108,8 @@ Tratamos de usar Unittest para orden del codigo, el cual seria como la mejor man
 >   unittest.main()
 
 ## Posibles mejoras si hubiera más tiempo 🔩
-1.La mejora que viera incorporado es la revición de la función KEYS por alguna raón al correr el código aveces sirve y aveces no lo cual no me deja satifescho
-2.Me viera gusta incorporar el selector correcto para llamar la casilla sigueinte el la prueba de login con Google, se que use uno icorrecto no devio ser de ID para jsname="V67aGc.
-3
+1. La mejora que viera incorporado es la revisión de la función send.keys por alguna razón al ejecutar el código aveces sirve y aveces, no lo cual no me deja              satifescho
+2. Me viera gusta incorporar el selector correcto para llamar la casilla sigueinte el la prueba de login con Google, se que use uno icorrecto no devio ser de ID para      jsname="V67aGc.
+4. Además me viera gusta hacer alguna pruebas mas detalladas con el login de google,salm y OpenID
+5. En general talvez hay mejores prácticas de automatizar que viera podido introducir con más tiempo
 
