@@ -31,23 +31,47 @@ Tratamos de usar Unittest para orden del codigo, el cual seria como la mejor man
 3. Creamos el primer **Test_login1**
    La idea de este test es abrir la pagina web en Chrome y utilizando el Selector id de email addrees (ember1642) enviamos con Keys el dato de un correo electronico de    ejemplo, luego utilizando el Selector id de password (ember1643) enviamos con Keys el dato de una clave cualquiera, posterior utilizando el Selector id de Log-in      (ember1652) e invocamos un click para que oprima en la casilla e imprimimos un mensaje de error de credenciales, incluyo un timer de 3 segundo solo para poder          visualizar los detalles:
    
-    > def test_login1(self):
-    >    driver = self.driver
-    >    
-    >    driver.get('https://app.sysdigcloud.com/#/login')
-    >    
-    >    email = driver.find_element(By.ID, 'ember1642')
-    >    
-    >    email.send_keys("norberto.araya@gmail.com")
-    >    
-    >    clave = driver.find_element(By.ID, 'ember1643')
-    >    
-    >    clave.send_keys("Clave1234")
-    >    
-    >    bto = driver.find_element(By.ID, 'ember1652')
-    >    
-    >    bto.click()
-    >    
-    >    print("error crendenciales incorrectas")
-    >    
-    >    time.sleep(3)
+> def test_login1(self):
+>    driver = self.driver
+>    
+>    driver.get('https://app.sysdigcloud.com/#/login')
+>    
+>    email = driver.find_element(By.ID, 'ember1642')
+>    
+>    email.send_keys("norberto.araya@gmail.com")
+>    
+>    clave = driver.find_element(By.ID, 'ember1643')
+>    
+>    clave.send_keys("Clave1234")
+>    
+>    bto = driver.find_element(By.ID, 'ember1652')
+>    
+>    bto.click()
+>    
+>    print("error crendenciales incorrectas")
+>    
+>    time.sleep(3)
+
+4. Creamos el segundo **Test_login2**
+   La idea de este test es abrir la pagina web en Chrome y utilizando el Selector id de email addrees (ember1642) enviamos con Keys el dato de un correo electronico      vacio, luego utilizando el Selector id de password (ember1643) enviamos con Keys el dato de una clave vacia, posterior utilizando el Selector id de Log-in              (ember1652) e invocamos un click para que oprima en la casilla e imprimimos un mensaje de error por fata de datos, incluyo un timer de 3 segundo solo para poder        visualizar los detalles:
+   
+> def test_login2(self):
+>    driver = self.driver
+>    
+>    driver.get('https://app.sysdigcloud.com/#/login')
+>    
+>    email = driver.find_element(By.ID, 'ember1642')
+>    
+>    email.send_keys("")
+>    
+>    clave = driver.find_element(By.ID, 'ember1643')
+>    
+>    clave.send_keys("")
+>    
+>    bto = driver.find_element(By.ID, 'ember1652')
+>    
+>    bto.click()
+>    
+>    print("error de login por no colocar datos")
+>    
+>    time.sleep(3)
