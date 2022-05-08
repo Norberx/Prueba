@@ -76,8 +76,8 @@ Tratamos de usar Unittest para orden del codigo, el cual seria como la mejor man
 >    
 >    time.sleep(3)
 
-5. Creamos el segundo **Test_login3**
-   En este test se trata de abrir la pagina web en Chrome y utilizando el Selector id de Log in with Google (identifierId) enviamos con Keys el dato de un correo          electronico de ejemplo, luego utilizando el Selector id de password (V67aGc) enviamos con Keys el dato de una clave vacia, posterior utilizando el Selector id de      jsname="V67aGc"e invocamos un click para que oprima en la casilla e imprimimos un mensaje de credencial incorrecto, incluyo un timer de 3 segundo solo para poder        visualizar los detalle:
+5. Creamos el tercer **Test_login3**
+   En este test se trata de abrir la pagina web en Chrome y utilizando el Selector id de Log in with Google (identifierId) enviamos con Keys el dato de un correo          electronico de ejemplo, luego utilizando el Selector id de password (V67aGc) enviamos con Keys el dato de una clave vacia, posterior utilizando el Selector id de      jsname="V67aGc"e invocamos un click para que oprima en la casilla e imprimimos un mensaje de credencial incorrecto, incluyo un timer de 3 segundo solo para poder      visualizar los detalle:
    
 > def test_login3(self)
 > 
@@ -97,4 +97,10 @@ Tratamos de usar Unittest para orden del codigo, el cual seria como la mejor man
 > 
 >time.sleep(3)
 
-> **En este caso no logre aclara bien el tema de Selector correcto para llamar la tecla siguiente = jsname="V67aGc"**
+> **NOTA: En este caso no logre aclara bien el tema de Selector correcto para llamar la tecla siguiente = jsname="V67aGc"**
+
+6. Creamos la funcion final para el cierre de la prueba de **Tester1**, debe llamarce **tearDown** y se agraga un if name == mail que unittest en su paltilla oficial      pide como base para cerrar la clase principal:
+
+>if __name__ == '__main__':
+>
+>   unittest.main()
