@@ -103,6 +103,12 @@ Tratamos de usar Unittest para orden del codigo, el cual seria como la mejor man
 
 6. Creamos la funcion final para el cierre de la prueba de **Tester1**, debe llamarce **tearDown** y se agraga un if name == mail que unittest en su paltilla oficial      pide como requisito base para cerrar la clase principal:
 
+>def tearDown(self):
+>
+>       driver = self.driver
+>       
+>       driver.close()
+>
 >if __name__ == '__main__':
 >
 >   unittest.main()
