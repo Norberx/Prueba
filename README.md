@@ -1,16 +1,16 @@
 # Prueba automatizada (Tester1.pv)
 
 ## Introducción
-Se hacesn varias puruebas de UnitTest muy básicas a la pag web solicitada de: app.sysdigcloud.com
+Se hacen varias pruebas de UnitTest muy básicas a la pag web solicitada de: app.sysdigcloud.com
 
-## Requerimintos necesarios para la prueba 🔧
-Fué necesario primero instalar los siguientes componetentes para dar inicio a la prueba:
+## Requerimientos necesarios para la prueba 🔧
+Fué necesario primero instalar los siguientes componentes para dar inicio a la prueba:
 1. Instalación de Python 3.9.6v / https://www.python.org/
-2. Instalación del IDE de Pycharm / https://www.jetbrains.com/es-es/pycharm/ para poder programar sensillo con python, importante destacar que se incorpora el interprete de python y la paquetería de selenium según el requerimiento.
+2. Instalación del IDE de Pycharm / https://www.jetbrains.com/es-es/pycharm/ para poder programar sencillo con python, importante destacar que se incorpora el interprete de python y la paquetería de selenium según el requerimiento.
 3. Configuración y descarga de los Webdrivers tanto para Chrome y el de Firefox, en el ejercicio se usa unicamente el de Chrome.
 
-## Paso a apaso 🚀
-1. Creamos el proyecto **Norberto** con el file **Tester.py**, importamos las siguientes librerias necesarias para la prueba, en el caso de **unittest se incorpora        sola**
+## Paso a paso 🚀
+1. Creamos el proyecto **Norberto** con el file **Tester.py**, importamos las siguientes librerias necesarias para la prueba, en el caso de **unittest se incorpora    sola**
 
 > import time
 >
@@ -22,16 +22,16 @@ Fué necesario primero instalar los siguientes componetentes para dar inicio a l
 >
 > from selenium.webdriver.common.by import By
 
-2. Creamos una case llamada **prueba** la cual nos importa la libreria de unittest automatico, creamos la función que debe llamarce **def** con el alrgumento **self** y para usarlo podemos poner una variable en este caso se llama drive para llamar la ruta de Chrome con .get.
+2. Creamos una clase llamada **prueba** la cual nos importa la libreria de unittest automatico, creamos la función que debe llamarce **def** con el argumento **self** y para usarlo podemos poner una variable en este caso se llama drive para llamar la ruta de Chrome con .get.
 
-Tratamos de usar Unittest para orden del codigo, el cual seria como la mejor manera de crear una plantilla para futuros test
+Tratamos de usar Unittest para orden del código, el cual seria como la mejor manera de crear una plantilla para futuros test
 
 >class prueba(unittest.TestCase):
 >   def setUp(self):
 >       self.driver = webdriver.Chrome('chromedriver.exe')
 
 3. Creamos el primer **Test_login1** ⚙️
-   La idea de este test es abrir la pagina web en Chrome y utilizando el Selector id de email addrees (ember1642) enviamos con Keys el dato de un correo electronico de    ejemplo, luego utilizando el Selector id de password (ember1643) enviamos con Keys el dato de una clave cualquiera, posterior utilizando el Selector id de Log-in      (ember1652) e invocamos un click para que oprima en la casilla e imprimimos un mensaje de error de credenciales, incluyo un timer de 3 segundo solo para poder          visualizar los detalles:
+La idea de este test es abrir la pagina web en Chrome y utilizando el Selector id de email addrees (ember1642) enviamos con Keys el dato de un correo electronico de ejemplo, luego utilizando el Selector id de password (ember1643) enviamos con Keys el dato de una clave cualquiera, posterior utilizando el Selector id de Log-in    (ember1652) e invocamos un click para que oprima en la casilla e imprimimos un mensaje de error de credenciales, incluyo un timer de 3 segundo solo para poder        visualizar los detalles:
    
 > def test_login1(self):
 >    driver = self.driver
@@ -99,9 +99,9 @@ Tratamos de usar Unittest para orden del codigo, el cual seria como la mejor man
 > 
 >time.sleep(3)
 
-> **NOTA: En este caso no logre aclara bien el tema de Selector correcto para llamar la tecla siguiente = jsname="V67aGc"**
+> **NOTA: En este caso no logre aclarar bien el tema del Selector correcto para llamar la tecla siguiente = jsname="V67aGc"**
 
-6. Creamos la funcion final para el cierre de la prueba de **Tester1**, debe llamarce **tearDown** y se agraga un if name == mail que unittest en su paltilla oficial      pide como requisito base para cerrar la clase principal:
+6. Creamos la funcion final para el cierre de la prueba de **Tester1**, debe llamarse **tearDown** y se agraga un if name == mail que unittest en su plantilla oficial pide como requisito base para cerrar la clase principal:
 
 >def tearDown(self):
 >
@@ -114,10 +114,11 @@ Tratamos de usar Unittest para orden del codigo, el cual seria como la mejor man
 >   unittest.main()
 
 ## Posibles mejoras si hubiera más tiempo 🔩
-1. La mejora que viera incorporado es la revisión de la función driver.find_element(By.ID ....y de send_keys por alguna razón al ejecutar el código aveces sirve y        aveces no, lo cual no me deja satifescho.
-2. Me viera gusta incorporar el selector correcto para llamar la casilla sigueinte el la prueba de login con Google, se que use uno icorrecto no devio ser de ID para      jsname="V67aGc.
-4. Además me viera gusta hacer alguna pruebas mas detalladas con el login de google,salm y OpenID
-5. En general talvez me viera gustado introducir otros selectores como XPHAH, AND incluso un if viera sido muy interesante y util para la prueba más automatizada
+1. La mejora que hubiese incorporado es la revisión de la función: driver.find_element(By.ID ....y de send_keys, ya que por alguna razón al ejecutar el código    
+a veces funciona y a veces no, lo cual no me deja satifescho.
+2. Me hubise gusta incorporar el selector correcto para llamar la casilla "siguiente" el la prueba de login con Google, se que usé uno icorrecto, no devio ser de ID para jsname="V67aGc.
+3. Además me hubiera gusta hacer alguna pruebas mas detalladas con el login de google,salm y OpenID
+4. En general talvez me viera gustado introducir otros selectores como XPHAH, AND incluso un if viera sido muy interesante y util para la prueba más automatizada
 
 ## Autor ✒️
 Norberto Araya Mena
