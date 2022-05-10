@@ -1,4 +1,4 @@
-# Prueba automatizada (Tester1.pv)
+# Prueba automatizada (Tester1.py)
 
 ## Introducción
 Se hacen varias pruebas de UnitTest muy básicas a la pag web solicitada de: app.sysdigcloud.com
