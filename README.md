@@ -101,7 +101,7 @@ La idea de este test es abrir la pagina web en Chrome y utilizando el Selector i
 
 > **NOTA: En este caso no logre aclarar bien el tema del Selector correcto para llamar la tecla siguiente = jsname="V67aGc"**
 
-6. Creamos la funcion final para el cierre de la prueba de **Tester1**, debe llamarse **tearDown** y se agraga un if name == mail que unittest en su plantilla oficial pide como requisito base para cerrar la clase principal:
+6. Creamos la funcion final para el cierre de la prueba de **Tester1**, debe llamarse **tearDown** y se agraga un if name == main que unittest en su plantilla oficial pide como requisito base para cerrar la clase principal:
 
 >def tearDown(self):
 >
