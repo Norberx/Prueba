@@ -114,8 +114,7 @@ La idea de este test es abrir la pagina web en Chrome y utilizando el Selector i
 >   unittest.main()
 
 ## Posibles mejoras si hubiera más tiempo 🔩
-1. La mejora que hubiese incorporado es la revisión de la función: driver.find_element(By.ID ....y de send_keys, ya que por alguna razón al ejecutar el código    
-a veces funciona y a veces no, lo cual no me deja satifescho.
+1. La mejora que hubiese incorporado es hacer que la prueba se completara correcta desde la class "prueba", existe un error con esa clase que debo revisar, sin       embargo, cada test si se ejecuta individual si funciona.
 2. Me hubise gusta incorporar el selector correcto para llamar la casilla "siguiente" el la prueba de login con Google, se que usé uno icorrecto, no devio ser de ID para jsname="V67aGc.
 3. Además me hubiera gusta hacer alguna pruebas mas detalladas con el login de google,salm y OpenID
 4. En general talvez me viera gustado introducir otros selectores como XPHAH, AND incluso un if viera sido muy interesante y util para la prueba más automatizada
