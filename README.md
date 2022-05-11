@@ -10,7 +10,7 @@ Fué necesario primero instalar los siguientes componentes para dar inicio a la 
 3. Configuración y descarga de los Webdrivers tanto para Chrome y el de Firefox, en el ejercicio se usa unicamente el de Chrome.
 
 ## Paso a paso 🚀
-1. Creamos el proyecto **Norberto** con el file **Tester.py**, importamos las siguientes librerias necesarias para la prueba, en el caso de **unittest se incorpora    sola**
+1. Creamos el proyecto **Norberto** con el file **Tester1.py**, importamos las siguientes librerias necesarias para la prueba, en el caso de **unittest se incorpora    sola**
 
 > import time
 >
